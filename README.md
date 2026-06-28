@@ -1,5 +1,10 @@
 # AI Chatbot Management Platform    
  ## Full Flow 
+# 🤖 AI Chatbot Management Platform
+
+## 📌 Full System Flow
+
+```text
 Company Registers
         │
         ▼
@@ -29,48 +34,54 @@ Test Chatbot
         ▼
 Deploy Chatbot
         │
-        ├────────► Website
-        ├────────► Mobile App
-        ├────────► WhatsApp
-        ├────────► Telegram
-        ├────────► Facebook Messenger
-        └────────► Slack / Teams
-                      │
-                      ▼
-              Customer Starts Chat
-                      │
-                      ▼
-          Spring Boot Receives Message
-                      │
-                      ▼
-           NLP Understands the Message
-          (Intent + Entity + Context)
-                      │
-                      ▼
-      Need Company Data?
-          │                     │
-          │ No                  │ Yes
-          ▼                     ▼
- Answer from Knowledge    Call CRM/Helpdesk/
- Base or Conversation     Shopify/API
- Flow                     │
-          │               ▼
-          └──────────► Get Live Data
-                          │
-                          ▼
-                 Generate Response
-                          │
-                          ▼
-               Send Reply to Customer
-                          │
-                          ▼
-       Store Conversation and Analytics
-                          │
-                          ▼
-            Machine Learning Improves Bot
-                          │
-                          ▼
-               Updated Bot is Redeployed
+        ├──► Website
+        ├──► Mobile App
+        ├──► WhatsApp
+        ├──► Telegram
+        ├──► Facebook Messenger
+        └──► Slack / Microsoft Teams
+                 │
+                 ▼
+        Customer Starts Chat
+                 │
+                 ▼
+    Spring Boot Receives Message
+                 │
+                 ▼
+    NLP Understands the Message
+   (Intent + Entity + Context)
+                 │
+                 ▼
+     ┌───────────────────────────┐
+     │ Need Company Data?        │
+     └───────────┬───────────────┘
+                 │
+          ┌──────┴──────┐
+          │             │
+         No            Yes
+          │             │
+          ▼             ▼
+Answer from      Call CRM / Helpdesk /
+Knowledge Base   Shopify / External APIs
+or Conversation          │
+Flow                     ▼
+          └──────► Get Live Data
+                         │
+                         ▼
+               Generate Response
+                         │
+                         ▼
+            Send Reply to Customer
+                         │
+                         ▼
+     Store Conversation & Analytics
+                         │
+                         ▼
+      Machine Learning Improves Bot
+                         │
+                         ▼
+          Updated Bot is Redeployed
+```
 
 
 
