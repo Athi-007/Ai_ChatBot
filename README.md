@@ -1,8 +1,5 @@
 # AI Chatbot Management Platform    
- ## Full Flow 
-# 🤖 AI Chatbot Management Platform
-
-## 📌 Full System Flow
+## Full System Flow
 
 ```text
 Company Registers
